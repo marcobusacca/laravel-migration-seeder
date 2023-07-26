@@ -42,22 +42,22 @@
                                     <!-- Departure Date -->
                                     <div class="col col-6">
                                         <strong>Departure Date:</strong>
-                                        <span>{{$train->departure_date_time}}</span>
+                                        <span>{{date('Y-m-d', strtotime($train->departure_date_time))}}</span>
                                     </div>
                                     <!-- Departure Time -->
                                     <div class="col col-6">
                                         <strong>Departure Time:</strong>
-                                        <span></span>
+                                        <span>{{date('H:i:s', strtotime($train->departure_date_time))}}</span>
                                     </div>
                                     <!-- Arrival Date -->
                                     <div class="col col-6">
                                         <strong>Arrival Date:</strong>
-                                        <span></span>
+                                        <span>{{date('Y-m-d', strtotime($train->arrival_date_time))}}</span>
                                     </div>
                                     <!-- Arrival Time -->
                                     <div class="col col-6">
                                         <strong>Arrival Time:</strong>
-                                        <span></span>
+                                        <span>{{date('H:i:s', strtotime($train->arrival_date_time))}}</span>
                                     </div>
                                 </div>
                             </div>
