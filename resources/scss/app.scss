@@ -1,1 +1,27 @@
 @import '~bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// MAIN
+main {
+    .card {
+        border: 2px solid black;
+        padding: 10px;
+
+        .row>.col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid gray;
+            padding: 15px 0;
+
+            &>* {
+                padding: 0 3px;
+            }
+        }
+    }
+}
