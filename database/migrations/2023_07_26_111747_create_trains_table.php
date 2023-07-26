@@ -19,10 +19,8 @@ return new class extends Migration
             $table->string('company', 50);
             $table->string('departure_station', 50);
             $table->string('arrival_station', 50);
-            $table->date('departure_date');
-            $table->date('arrival_date');
-            $table->dateTime('departure_time');
-            $table->dateTime('arrival_time');
+            $table->dateTime('departure_date_time');
+            $table->dateTime('arrival_date_time');
             $table->tinyInteger('coaches_number')->nullable();
             $table->boolean('on_time')->default(true);
             $table->boolean('deleted')->default(false);
