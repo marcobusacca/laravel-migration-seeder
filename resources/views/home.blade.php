@@ -47,7 +47,7 @@
                                     <!-- Departure Time -->
                                     <div class="col col-6">
                                         <strong>Departure Time:</strong>
-                                        <span>{{ $train->departure_time }}</span>
+                                        <span>{{ date('H:i', strtotime($train->departure_time)) }}</span>
                                     </div>
                                     <!-- Arrival Date -->
                                     <div class="col col-6">
@@ -57,7 +57,7 @@
                                     <!-- Arrival Time -->
                                     <div class="col col-6">
                                         <strong>Arrival Time:</strong>
-                                        <span>{{ $train->arrival_time }}</span>
+                                        <span>{{ date('H:i', strtotime($train->arrival_time)) }}</span>
                                     </div>
                                 </div>
                             </div>
