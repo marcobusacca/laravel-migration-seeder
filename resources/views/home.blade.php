@@ -80,7 +80,7 @@
                 </div>
             </div>
             @empty
-            <div class="col-12 my-5">
+            <div class="col-12 text-center my-5">
                 <h2>Train Not Found!</h2>
             </div>
             @endforelse
