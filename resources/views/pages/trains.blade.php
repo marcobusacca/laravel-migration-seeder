@@ -3,6 +3,9 @@
 @section('content')
     <div class="container py-5">
         <div class="row">
+            <div class="col-12 text-center my-5">
+                <a href="{{ Route('home') }}" class="btn btn-dark mx-2">Return To Home Page</a>
+            </div>
             @forelse ($trains as $train)
                 <div class="col-12 my-5">
                     <div class="card h-100">
