@@ -19,3 +19,5 @@ use App\Http\Controllers\Guest\PassengerController as PassengerController;
 Route::get('/', [PageController::class, 'index'])->name('home');
 
 Route::get('/trains', [TrainController::class, 'trains'])->name('trains');
+
+Route::get('/passengers', [PassengerController::class, 'passengers'])->name('passengers');
