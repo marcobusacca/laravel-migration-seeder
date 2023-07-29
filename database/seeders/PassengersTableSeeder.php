@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 // IMPORTARE IL MODEL
 use Faker\Generator as Faker;
+use Faker\Provider\en_US\Person;
 
 class PassengersTableSeeder extends Seeder
 {
